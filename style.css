@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    border: solid 0px black;
+    width: 450px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px #888888;
+}
+
+#hero {
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+}
+
+#order {
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(223, 47%, 23%);
+    position: relative;
+    top: 50px;
+    right: -95px;
+    font-weight: 900;
+}
+
+#listen {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-family: 'Red Hat Display', sans-serif;
+    position: relative;
+    top: 100px;
+    right: -10px;
+    text-align: center;
+}
+
+#buy {
+    width: 250px;
+    height: 50px;
+    border: black 0px solid;
+    position: relative;
+    top: 115px;
+    left: 100px;
+}
+
+#annual {
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(223, 47%, 23%);
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+}
+
+#cost {
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(224, 23%, 55%);
+    position: relative;
+    bottom: 38px;
+    left: 50px;
+}
+
+#change {
+    position: relative;
+    bottom: 70px;
+    left: 190px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+}
+
+#proceed {
+    position: relative;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: hsl(223, 47%, 23%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: white;
+    top: 130px;
+    left: 125px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+#cancel {
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    position: relative;
+    top: 150px;
+    left: 180px;
+    cursor: pointer;
+    transition: 00.8s;
+}
+
+#proceed:hover {
+    background-color: white;
+    color: black;
+}
+
+#cancel:hover {
+    color: black;
+}
+
+
+
+@media screen and (min-width: 375px) {
+    #container {
+        width: 365px;
+    }
+
+    #hero {
+        width: 365px;
+    }
+
+    #order {
+        right: -50px;
+    }
+
+    #buy {
+        left: 60px;       
+    }
+
+    #proceed {
+        left: 85px;
+    }
+
+    #cancel {
+        left: 145px;
+        width: 100px
+    }
+
+    body {
+        width: -20px;
+    }
+}
